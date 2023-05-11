@@ -10,7 +10,30 @@ header:
       url: "#test-link"
 excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 
-feature_row:
+intro: 
+  - excerpt: 'In this page you can find various full projects and  `type="center"`'
+
+feature_row_1:
+  - image_path: /assets/splash/gy521.jpg
+    title: "IMU"
+    excerpt: "Full project on how to create an IMU"
+    url: "https://github.com/kwfoged/qudrotor"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/splash/drone2.jpg
+    title: "Quadcopter "
+    excerpt: "Full Quadcopter Project"
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/splash/coffee.jpg
+    title: "Placeholder 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  
+feature_row_2:
   - image_path: /assets/splash/gy521.jpg
     title: "IMU"
     excerpt: "Full project on how to create an IMU"
@@ -31,4 +54,8 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-{% include feature_row %}
+
+
+{% include feature_row id="intro" type="center" %}
+{% include feature_row id="feature_row_1"%}
+{% include feature_row id="feature_row_2"%}
